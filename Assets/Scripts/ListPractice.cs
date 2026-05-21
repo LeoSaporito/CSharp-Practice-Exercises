@@ -55,7 +55,9 @@ public class ListPractice : MonoBehaviour
         {
             if (inventory[i] == "Potion")
             { 
-                inventory.RemoveAt(i);        
+                inventory.RemoveAt(i);
+
+                return;
             }
         }
     }

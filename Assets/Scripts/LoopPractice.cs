@@ -1,3 +1,4 @@
+using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.InputSystem;
 
@@ -49,9 +50,12 @@ public class LoopPractice : MonoBehaviour
 
     public void AddOneToOneHundred() //???
     {
-        for (int i = 0; i < 100; i++)
+        int sum = 0;
+
+        for (int i = 0; i <= 100; i++)
         {
-            Debug.Log(i += i);
+            sum += i;
         }
+        Debug.Log(sum);
     }
 }
